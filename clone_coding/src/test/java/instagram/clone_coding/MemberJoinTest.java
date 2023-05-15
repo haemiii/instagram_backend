@@ -28,6 +28,8 @@ public class MemberJoinTest {
     public void 회원가입() throws Exception {
 
         Member member = new Member();
+        member.setId("ham");
+        member.setPassword("1234");
         member.setName("Kang");
 
         String saveId = memberService.join(member);

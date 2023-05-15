@@ -13,5 +13,10 @@ spring:
         # show_sql: true
         format_sql: true
 
+jwt:
+  secret:
+    aw3j5kl34k6j3i7l4k11@353jj2i4jlk!@3!@34klkjlaiwmdflklmlksleijfk
+
 logging.level:
   org.hibernate.SQL: debug
+

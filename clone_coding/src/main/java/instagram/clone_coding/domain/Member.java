@@ -1,25 +1,42 @@
 package instagram.clone_coding.domain;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.security.core.userdetails.UserDetails;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.List;
+import java.util.stream.Collectors;
 
 @Entity
 @Getter
 @Setter
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class Member {
+    //userdetails : 인증에 사용되는 인터페이스
+    // 인증에 필요한 사용자 정보를 제공하는 메소드들을 정의!
 
-    @Id
+    @Id @GeneratedValue
     @Column(name= "member_id")
-    private String id;
+    private Long id;
 
     private String name;
 
+    @Column(unique = true)
+    private String nickname;
+
     private String password;
 
+    @Column(unique = true)
     private String email;
+
+    @Enumerated(EnumType.STRING)
+    private Role role;
+
 }
