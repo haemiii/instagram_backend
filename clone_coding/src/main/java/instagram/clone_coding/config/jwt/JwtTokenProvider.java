@@ -89,4 +89,10 @@ public class JwtTokenProvider {
             return e.getClaims();
         }
     }
+
+    public String extractEmailFromToken(String token) {
+        Claims claims = parseClaims(token);
+        return claims.getSubject();
+    }
+
 }

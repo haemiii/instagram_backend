@@ -64,7 +64,7 @@ public class MemberService {
         try {
             Authentication authentication = authenticationManagerBuilder.getObject().authenticate(authenticationToken);
             String token = jwtTokenProvider.generateToken(authentication);
-            System.out.println("authentication" + authentication);
+            System.out.println("authentication = " + authentication);
             return token;
         } catch (AuthenticationException e) {
             System.out.println("Exception: " + e.getMessage());

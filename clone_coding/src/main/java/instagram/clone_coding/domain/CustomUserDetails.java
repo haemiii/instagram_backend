@@ -1,26 +1,38 @@
 package instagram.clone_coding.domain;
 
-import lombok.Getter;
+import lombok.*;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.stereotype.Component;
 
+import javax.persistence.Entity;
 import java.util.ArrayList;
 import java.util.Collection;
 
 @Getter
+@Builder
+@Component
+@RequiredArgsConstructor
 public class CustomUserDetails implements UserDetails {
     private final Member member;
 
-    public CustomUserDetails(Member member) {
-        this.member = member;
-    }
-
+//    @Autowired
+//    public CustomUserDetails(Member member) {
+//        this.member = member;
+//    }
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         Collection<GrantedAuthority> authorities = new ArrayList<>();
         authorities.add(new SimpleGrantedAuthority(this.getMember().getRole().toString()));
         return authorities;
+    }
+
+    public String toString() {
+        return "CustomUserDetails{" +
+                "member=" + member +
+                '}';
     }
 
     @Override
