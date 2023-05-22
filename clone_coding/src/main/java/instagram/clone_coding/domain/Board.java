@@ -25,4 +25,9 @@ public class Board {
     @ManyToOne
     @JoinColumn(name= "member_id")
     private Member member;
+
+    private int heart;
+
+    @OneToMany(mappedBy = "comment_id")
+    private Comment comment;
 }

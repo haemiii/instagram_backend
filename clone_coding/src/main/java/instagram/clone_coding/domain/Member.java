@@ -45,4 +45,6 @@ public class Member {
     @OneToMany(mappedBy = "member", cascade = CascadeType.PERSIST)
     private List<Board> boards;
 
+
+
 }
