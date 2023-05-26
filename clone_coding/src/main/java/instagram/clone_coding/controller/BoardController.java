@@ -2,10 +2,7 @@ package instagram.clone_coding.controller;
 
 import instagram.clone_coding.Dto.BoardUploadDto;
 import instagram.clone_coding.Dto.CommentDto;
-import instagram.clone_coding.domain.Board;
-import instagram.clone_coding.domain.Comment;
-import instagram.clone_coding.domain.CustomUserDetails;
-import instagram.clone_coding.domain.Member;
+import instagram.clone_coding.domain.*;
 import instagram.clone_coding.service.BoardService;
 import instagram.clone_coding.service.CommentService;
 import instagram.clone_coding.service.LikesService;
@@ -44,6 +41,15 @@ public class BoardController {
 
         // 생성된 댓글을 클라이언트에게 응답합니다.
         return ResponseEntity.ok("댓글 생성 완료: " + createdComment);
+    }
+
+    @PostMapping("/{boardId}/like")
+    public ResponseEntity<String> likeBoard(HttpServletRequest request, @PathVariable("boardId") Long id) {
+
+        Likes likeBoard = likesService.likeBoard(request, id);
+
+        // 생성된 댓글을 클라이언트에게 응답합니다.
+        return ResponseEntity.ok("댓글 생성 완료: " + likeBoard);
     }
 
 

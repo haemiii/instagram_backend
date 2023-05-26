@@ -11,14 +11,12 @@ import javax.persistence.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
-// @Table(uniqueConstraints = @UniqueConstraint(columnNames = {"board_id", "member_id"}))
+
 public class Likes {
     @Id
     @GeneratedValue
     @Column(name = "like_id")
     private Long id;
-
-    private String content;
 
     @ManyToOne
     @JoinColumn(name = "board_id")

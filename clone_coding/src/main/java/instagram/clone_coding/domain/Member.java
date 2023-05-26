@@ -13,7 +13,7 @@ import java.util.List;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@ToString
+
 public class Member {
     //userdetails : 인증에 사용되는 인터페이스
     // 인증에 필요한 사용자 정보를 제공하는 메소드들을 정의!
