@@ -33,6 +33,7 @@ public class LikesService {
 
         Optional<Board> board = boardRepository.findById(id);
 
+
         Likes likes = Likes.builder()
                 .board(board.get())
                 .member(member)
@@ -41,6 +42,11 @@ public class LikesService {
         likesRepository.save(likes);
 
         return likes;
+    }
+
+    public Long countLike(Long boardId) {
+
+        return likesRepository.countByBoardId(boardId);
     }
 
     public void unlikeBoard(Board board, Member member) {

@@ -49,7 +49,15 @@ public class BoardController {
         Likes likeBoard = likesService.likeBoard(request, id);
 
         // 생성된 댓글을 클라이언트에게 응답합니다.
-        return ResponseEntity.ok("댓글 생성 완료: " + likeBoard);
+        return ResponseEntity.ok("좋아요 : " + likeBoard);
+    }
+
+    @PostMapping("/{boardId}/likenumber")
+    public ResponseEntity<String> countLike(@PathVariable("boardId") Long id) {
+
+        Long count = likesService.countLike(id);
+
+        return ResponseEntity.ok("좋아요 갯수 : " + count);
     }
 
 
