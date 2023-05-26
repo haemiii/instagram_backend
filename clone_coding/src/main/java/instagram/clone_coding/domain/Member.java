@@ -1,17 +1,10 @@
 package instagram.clone_coding.domain;
 
 import lombok.*;
-import org.springframework.security.core.GrantedAuthority;
-import org.springframework.security.core.authority.SimpleGrantedAuthority;
-import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Component;
 
 import javax.persistence.*;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
 import java.util.List;
-import java.util.stream.Collectors;
 
 @Component
 @Entity
@@ -44,5 +37,11 @@ public class Member {
 
     @OneToMany(mappedBy = "member", cascade = CascadeType.PERSIST)
     private List<Board> boards;
+
+    @OneToMany(mappedBy = "member", cascade = CascadeType.PERSIST)
+    private List<Comment> comments;
+
+    @OneToMany(mappedBy = "member", cascade = CascadeType.PERSIST)
+    private List<Likes> likes;
 
 }

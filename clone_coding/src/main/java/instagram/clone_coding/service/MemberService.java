@@ -20,7 +20,7 @@ import static instagram.clone_coding.domain.Role.USER;
 @Service
 @Transactional
 @RequiredArgsConstructor
-public class MemberService {
+public class    MemberService {
 
     //생성자 주입 -> @RequiredArgsConstructor를 이용하여 생략 가능
     private final MemberRepository memberRepository;

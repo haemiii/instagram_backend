@@ -43,7 +43,7 @@ public class BoardService {
         return registered;
     }
 
-    private String extractTokenFromHeader(HttpServletRequest request) {
+    private String extractTokenFromHeader(HttpServletRequest request) { // 토큰 추출
         String headerValue = request.getHeader("Authorization");
         if (headerValue != null && headerValue.startsWith("Bearer ")) {
             return headerValue.substring(7);
