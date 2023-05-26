@@ -5,26 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="122513bf-1a8b-40c2-91a1-1482c0553cc1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/instagram/clone_coding/Dto/CommentDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/instagram/clone_coding/domain/Comment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/instagram/clone_coding/domain/Likes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/instagram/clone_coding/repository/CommentRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/instagram/clone_coding/repository/LikesRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/instagram/clone_coding/service/CommentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/instagram/clone_coding/service/LikesService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/instagram/clone_coding/controller/BoardController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/instagram/clone_coding/controller/BoardController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/instagram/clone_coding/domain/Comment.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/instagram/clone_coding/domain/Comment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/instagram/clone_coding/domain/Likes.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/instagram/clone_coding/domain/Likes.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/instagram/clone_coding/repository/CommentRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/instagram/clone_coding/repository/CommentRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/instagram/clone_coding/repository/LikeRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/instagram/clone_coding/service/CommentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/instagram/clone_coding/service/CommentService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/instagram/clone_coding/service/LikeService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/instagram/clone_coding/controller/BoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/instagram/clone_coding/controller/BoardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/instagram/clone_coding/domain/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/instagram/clone_coding/domain/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/instagram/clone_coding/domain/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/instagram/clone_coding/domain/Member.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/instagram/clone_coding/domain/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/instagram/clone_coding/domain/Comment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/instagram/clone_coding/repository/BoardRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/instagram/clone_coding/repository/BoardRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/instagram/clone_coding/service/BoardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/instagram/clone_coding/service/BoardService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/instagram/clone_coding/service/MemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/instagram/clone_coding/service/MemberService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/instagram/clone_coding/CloneCodingApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/instagram/clone_coding/repository/CommentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/instagram/clone_coding/repository/CommentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/instagram/clone_coding/service/CommentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/instagram/clone_coding/service/CommentService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
