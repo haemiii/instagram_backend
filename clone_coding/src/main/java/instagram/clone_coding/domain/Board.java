@@ -3,6 +3,7 @@ package instagram.clone_coding.domain;
 import lombok.*;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Getter
@@ -10,7 +11,7 @@ import javax.persistence.*;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@ToString
+
 public class Board {
 
     @Id @GeneratedValue
@@ -26,8 +27,13 @@ public class Board {
     @JoinColumn(name= "member_id")
     private Member member;
 
-    private int heart;
 
-    @OneToMany(mappedBy = "comment_id")
-    private Comment comment;
+    @OneToMany(mappedBy = "board", cascade = CascadeType.PERSIST)
+    private List<Comment> comments;
+
+    @OneToMany(mappedBy = "board", cascade = CascadeType.PERSIST)
+    private List<Likes> likes;
+
+    
+
 }
