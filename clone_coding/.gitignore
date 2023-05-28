@@ -1,6 +1,5 @@
 HELP.md
 .gradle
-C:\Users\eham1\Desktop\대학교\project\instagram_backend\clone_coding\.gradle
 .idea
 build/
 !gradle/wrapper/gradle-wrapper.jar
