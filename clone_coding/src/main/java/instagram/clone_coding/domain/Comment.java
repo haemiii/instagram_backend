@@ -12,7 +12,7 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-@ToString
+
 public class Comment {
 
     @Id
@@ -32,3 +32,4 @@ public class Comment {
 
 
 }
+
